@@ -1,5 +1,5 @@
 // Network first so the team always sees fresh code; falls back to cache when offline.
-const CACHE = "travelluxe-demo-v1";
+const CACHE = "travelluxe-demo-v2";
 const SHELL = ["./", "index.html", "app.js", "store.js", "config.js", "business.js", "data/seed.js", "manifest.json", "logo.png", "logo-mark.png", "icon-192.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener("activate", e => e.waitUntil(
